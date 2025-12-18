@@ -12,7 +12,7 @@ fn main() {
             ',' | '-' => {
                 let num: i64 = local_num.trim().parse().unwrap();
                 nums.push(num);
-                local_num = String::from("");
+                local_num.clear();
             }
             _ => {
                 local_num.push(char);
